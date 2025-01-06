@@ -1,0 +1,10 @@
+This asset is governed by the Asset Store EULA; however, the following components are governed by the licenses indicated below:
+
+A. OSWALD-REGULAR font by Vernon Adams
+Oswald is designed to be used freely across the internet by web browsers on desktop computers, laptops and mobile devices. 
+https://github.com/googlefonts/OswaldFont
+https://fonts.google.com/specimen/Oswald/about
+
+B.  Lilita One by Juan Montoreano 
+Lilita One is licensed under the Open Font License. You can use them in your products & projects – print or digital, commercial or otherwise. 
+https://fonts.google.com/specimen/Lilita+One/about
