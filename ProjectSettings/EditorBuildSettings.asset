@@ -6,15 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/SnakeWarzIO/_Scenes/Init.unity
+    path: Assets/_Project/Scenes/Init.unity
     guid: 918fbc6af67db5741b8596a4afcc0f06
   - enabled: 1
-    path: Assets/SnakeWarzIO/_Scenes/Menu.unity
+    path: Assets/_Project/Scenes/Menu.unity
     guid: 8e095ed3f6eb59141a4b2c8f68175d59
   - enabled: 1
-    path: Assets/SnakeWarzIO/_Scenes/Game.unity
+    path: Assets/_Project/Scenes/Game.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/SnakeWarzIO/_Scenes/Skins.unity
+    path: Assets/_Project/Scenes/Skins.unity
     guid: 5feacb3eadc27c0458bd73fe62b25e9a
   m_configObjects: {}

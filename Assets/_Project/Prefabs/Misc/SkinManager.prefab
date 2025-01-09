@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6640988050447384347
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6640988050447384346}
+  - component: {fileID: 6640988050447384345}
+  m_Layer: 0
+  m_Name: SkinManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6640988050447384346
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6640988050447384347}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6640988050447384345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6640988050447384347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa4adcdfcc2078f4abac770179c96adf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  availableHeadSkins:
+  - {fileID: 21300000, guid: 9f6fea3e8a33c1847b20cf254393eda4, type: 3}
+  - {fileID: 21300000, guid: 06e514bdcb7a01a4aa0663335d4a753d, type: 3}
+  - {fileID: 21300000, guid: 0c1817b6a15ccc14f889aac35349b878, type: 3}
+  - {fileID: 21300000, guid: c9313dab8c71cb5479f929b8c116559d, type: 3}
+  - {fileID: 21300000, guid: 237db8e8f49da864bbbcadd062bb44aa, type: 3}
+  - {fileID: 21300000, guid: 7d83c7d197340ea4daf1b4219efcb57c, type: 3}
+  - {fileID: 21300000, guid: b06a9dd307c0b5e47bb559236174453f, type: 3}
+  - {fileID: 21300000, guid: fd9dadf9b7343464f80e19a4b9d35381, type: 3}
+  - {fileID: 21300000, guid: d2facc6835aca52498be7ca13a29c7a3, type: 3}
+  - {fileID: 21300000, guid: 0701989c580762145ae163fb9b4276b7, type: 3}
+  - {fileID: 21300000, guid: 1f2bc21ab2ea8b44bb4d06a8cb81deb3, type: 3}
+  - {fileID: 21300000, guid: cb5c89499fcf9f34f894e18b854e1ba0, type: 3}
+  - {fileID: 21300000, guid: b3c354dc362f15f41844213812688fca, type: 3}
+  availableBodySkins:
+  - {fileID: 21300000, guid: d733d204766bbc14581f222fcff017b0, type: 3}
+  - {fileID: 21300000, guid: 27f02685c073d0544a77df42ebac7755, type: 3}
+  - {fileID: 21300000, guid: b42bdae32d99bdf4f9d50128422e058b, type: 3}
+  - {fileID: 21300000, guid: 371792c85bde0de409dd8cbf259123ef, type: 3}
+  - {fileID: 21300000, guid: 41f84152d2f8f1d44804a6a3db3f221c, type: 3}
+  - {fileID: 21300000, guid: 9b52c3db23e2c4940965cb2820d52f07, type: 3}
+  - {fileID: 21300000, guid: 27ff4b5159423dd478cdb27f9972235f, type: 3}
+  - {fileID: 21300000, guid: 2749b81c9c571dd4b97d881b687d03a6, type: 3}
+  - {fileID: 21300000, guid: 41022642371351549b10d11e070064f6, type: 3}
+  - {fileID: 21300000, guid: 2b2f865ec5527374f8584ce1d19bfa67, type: 3}
+  - {fileID: 21300000, guid: 42f79e423ef44d647a236932e30dc53d, type: 3}
+  - {fileID: 21300000, guid: d5e92d0f4dfa3b24a9b67c2c1dcb5fef, type: 3}
+  - {fileID: 21300000, guid: 8d1ea98213449934da91fc7cd744628c, type: 3}
+  gameBG: {fileID: 0}
+  availableBackgrounds:
+  - {fileID: 2100000, guid: 6ce6659b9534e354bb8aaa0c1694178a, type: 2}
+  - {fileID: 2100000, guid: f7e947104cc584c47ac05bf6083c1339, type: 2}
+  - {fileID: 2100000, guid: b3d7249dadd372e448cc58752b8c4309, type: 2}
+  - {fileID: 2100000, guid: 9075e5ac51fb8e9449688e1d6ecf921c, type: 2}
+  - {fileID: 2100000, guid: e0f0393506a96744d87611df59d2b86e, type: 2}
+  - {fileID: 2100000, guid: 34b2d531509373845b15897ba9994618, type: 2}
+  - {fileID: 2100000, guid: 5e0a5e75561c3b9428ee7d126b057d1e, type: 2}
+  - {fileID: 2100000, guid: ee6f32f6b920d694eb1f6fcee7e4e2fe, type: 2}
