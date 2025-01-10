@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -28,9 +29,9 @@ namespace SnakeWarzIO
         public GameObject gameoverPanel;
         public GameObject scoreGroup;
         public GameObject eliminationGroup;
-        public Text ingameScoreUI;
-        public Text ingameTimerUI;
-        public Text remainingEnemiesUI;
+        public TMP_Text ingameScoreUI;
+        public TMP_Text ingameTimerUI;
+        public TMP_Text remainingEnemiesUI;
         public GameObject joystickController;
 
         //Game state
@@ -213,27 +214,26 @@ namespace SnakeWarzIO
             HandleGameTimer();
             //RunGameTimer();
 
-            //Debug
-            if (Application.isEditor)
-            {
-                if (Input.GetKeyDown(KeyCode.R))
-                {
-                    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-                }
+            // TODO Debug
+            // if (Application.isEditor)
+            // {
+            //     if (Input.GetKeyDown(KeyCode.R))
+            //     {
+            //         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            //     }
+            //
+            //     if (Input.GetKeyDown(KeyCode.D))
+            //     {
+            //         GameObject[] allBots = GameObject.FindGameObjectsWithTag("BotHead");
+            //         foreach (GameObject b in allBots)
+            //             b.GetComponent<BotController>().Die();
+            //     }
+            // }
 
-                if (Input.GetKeyDown(KeyCode.D))
-                {
-                    GameObject[] allBots = GameObject.FindGameObjectsWithTag("BotHead");
-                    foreach (GameObject b in allBots)
-                        b.GetComponent<BotController>().Die();
-                }
-            }
-
-            //Debug only!
-            if (Input.GetKeyDown(KeyCode.Alpha9))
-            {
-                mainCanvas.SetActive(!mainCanvas.activeSelf);
-            }
+            // if (Input.GetKeyDown(KeyCode.Alpha9))
+            // {
+            //     mainCanvas.SetActive(!mainCanvas.activeSelf);
+            // }
         }
 
         public void StartTheGame()

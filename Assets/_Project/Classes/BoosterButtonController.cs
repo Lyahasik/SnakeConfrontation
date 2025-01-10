@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -22,7 +23,7 @@ namespace SnakeWarzIO
         public Button buttonReference;
         public CanvasGroup parentCanvasGroup;
         public CanvasGroup boosterIconCanvasGroup;
-        public Text amountUI;
+        public TMP_Text amountUI;
         public Image boosterFillUI;
 
         private void Awake()

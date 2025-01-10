@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -16,12 +17,12 @@ namespace SnakeWarzIO
         private bool canFastStart;
 
         [Header("Player Data")]
-        public Text playerNameUI;
-        public InputField playerNameInputfieldUI;
-        public Text playerMoneyUI;
-        public Text playerBestScoreUI;
-        public Text playerXPUI;
-        public Text playerLevelUI;
+        public TMP_Text playerNameUI;
+        public TMP_InputField playerNameInputfieldUI;
+        public TMP_Text playerMoneyUI;
+        public TMP_Text playerBestScoreUI;
+        public TMP_Text playerXPUI;
+        public TMP_Text playerLevelUI;
         public Image xpBarUI;
 
         [Header("Audio Settings")]        
@@ -42,11 +43,11 @@ namespace SnakeWarzIO
         [Header("Player Profile Panel")]
         public GameObject profilePanel;
         private Animator profileAnim;
-        public Text ppGamesPlayedUI;
-        public Text ppTotalPlayTimeUI;
-        public Text ppKillsUI;
-        public Text ppBestScoreUI;
-        public Text ppCollectedFoodUI;
+        public TMP_Text ppGamesPlayedUI;
+        public TMP_Text ppTotalPlayTimeUI;
+        public TMP_Text ppKillsUI;
+        public TMP_Text ppBestScoreUI;
+        public TMP_Text ppCollectedFoodUI;
 
         [Header("Mode Selection Panel")]
         public GameObject modeSelectionPanel;

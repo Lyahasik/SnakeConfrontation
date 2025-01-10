@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,9 +13,9 @@ namespace SnakeWarzIO
 {
     public class ListItem : MonoBehaviour
     {
-        public Text rankUI;
-        public Text playerNameUI;
-        public Text scoreUI;
+        public TMP_Text rankUI;
+        public TMP_Text playerNameUI;
+        public TMP_Text scoreUI;
 
         internal int rank;
         internal string playerName;

@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using System;
 using System.Linq;
 using System.Text.RegularExpressions;
+using TMPro;
 
 /// <summary>
 /// This is a fully functional wheel-of-fortune system that helps with player retention and allows your player to return to game every once in a while to try their luck with the wheel and win
@@ -48,11 +49,11 @@ namespace SnakeWarzIO
         [Header("Object References")]
         public Button spinButtonUI;
         public GameObject spinButtonReadyLabel;
-        public GameObject spinButtonNotreadyLabel;
+        public TMP_Text spinButtonNotreadyLabel;
         public GameObject ResultPanel;
         public Image resultIconUI;
-        public Text resultValueUI;
-        public Text resultDescriptionUI;
+        public TMP_Text resultValueUI;
+        public TMP_Text resultDescriptionUI;
 
         [Header("Time Settings")]
         public int spinCooldown = 3600; //Seconds
@@ -116,17 +117,17 @@ namespace SnakeWarzIO
             {
                 spinButtonUI.enabled = true;
                 spinButtonReadyLabel.SetActive(true);
-                spinButtonNotreadyLabel.SetActive(false);
+                spinButtonNotreadyLabel.gameObject.SetActive(false);
             }
             else
             {
                 spinButtonUI.enabled = false;
                 spinButtonReadyLabel.SetActive(false);
-                spinButtonNotreadyLabel.SetActive(true);
+                spinButtonNotreadyLabel.gameObject.SetActive(true);
 
                 int remainingTimeToNextSpin = (spinCooldown + PlayerPrefs.GetInt("LastSpinTime") - currentTime);
                 print("remainingTimeToNextSpin: " + remainingTimeToNextSpin);
-                spinButtonNotreadyLabel.GetComponent<Text>().text = "СЛЕДУЮЩАЯ ПОПЫТКА\n" + TimeSpan.FromSeconds(remainingTimeToNextSpin).ToString(@"hh\:mm\:ss");
+                spinButtonNotreadyLabel.text = "СЛЕДУЮЩАЯ ПОПЫТКА\n" + TimeSpan.FromSeconds(remainingTimeToNextSpin).ToString(@"hh\:mm\:ss");
             }
         }
 

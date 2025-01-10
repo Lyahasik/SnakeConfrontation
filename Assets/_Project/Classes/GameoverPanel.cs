@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -15,18 +16,18 @@ namespace SnakeWarzIO
 
         [Header("UI Objects")]
         public GameObject normalScoreGroup;
-        public Text rankUI;
-        public Text scoreUI;
+        public TMP_Text rankUI;
+        public TMP_Text scoreUI;
         public GameObject newBestUI;
-        public Text currentLevelUI;
-        public Text xpUI;
-        public Text prizeCoinUI;
+        public TMP_Text currentLevelUI;
+        public TMP_Text xpUI;
+        public TMP_Text prizeCoinUI;
         public Image xpBarUI;
 
         //Game modes
         //Battle royale
         public GameObject battleRoyaleGroup;
-        public Text battleRoyaleRankUI;
+        public TMP_Text battleRoyaleRankUI;
 
 
         private void Awake()

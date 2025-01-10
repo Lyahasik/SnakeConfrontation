@@ -47,33 +47,33 @@ namespace SnakeWarzIO
 
         private void Update()
         {
-            //Debug - add manual bodypart
-            if (Application.isEditor)
-            {
-                if (Input.GetKey(KeyCode.Return))
-                {
-                    currentFoodToBodypartCounter++;
-                    if (currentFoodToBodypartCounter % GameController.foodIntoBodypart == 0)
-                    {
-                        AddBodypart(GameController.normalFoodScore * BoostersController.instance.GetScoreMultiplier());
-                        UpdateSize(totalBodyParts);
-                    }
-                }
-            }
-            else
-            {
-                #if UNITY_WEBGL
-                    if (Input.GetKey(KeyCode.Alpha8))
-                    {
-                        currentFoodToBodypartCounter++;
-                        if (currentFoodToBodypartCounter % GameController.foodIntoBodypart == 0)
-                        {
-                            AddBodypart(GameController.normalFoodScore);
-                            UpdateSize(totalBodyParts);
-                        }
-                    }
-                #endif
-            }
+            // TODO Debug - add manual bodypart
+            // if (Application.isEditor)
+            // {
+            //     if (Input.GetKey(KeyCode.Return))
+            //     {
+            //         currentFoodToBodypartCounter++;
+            //         if (currentFoodToBodypartCounter % GameController.foodIntoBodypart == 0)
+            //         {
+            //             AddBodypart(GameController.normalFoodScore * BoostersController.instance.GetScoreMultiplier());
+            //             UpdateSize(totalBodyParts);
+            //         }
+            //     }
+            // }
+            // else
+            // {
+            //     #if UNITY_WEBGL
+            //         if (Input.GetKey(KeyCode.Alpha8))
+            //         {
+            //             currentFoodToBodypartCounter++;
+            //             if (currentFoodToBodypartCounter % GameController.foodIntoBodypart == 0)
+            //             {
+            //                 AddBodypart(GameController.normalFoodScore);
+            //                 UpdateSize(totalBodyParts);
+            //             }
+            //         }
+            //     #endif
+            // }
         }
 
         void LateUpdate()

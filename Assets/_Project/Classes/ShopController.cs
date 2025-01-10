@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -15,7 +16,7 @@ namespace SnakeWarzIO
         public static ShopController instance;
 
         [Header("UI Items")]
-        public Text playerCoinsUI;
+        public TMP_Text playerCoinsUI;
         public GameObject demoSnake;
 
         [Header("Shop Details")]

@@ -22,32 +22,32 @@ namespace SnakeWarzIO
 
         void Update()
         {
-            //Used for easy debug & test on editor
-            if (Application.isEditor)
-            {
-                if (Input.GetKeyDown(KeyCode.KeypadPlus))
-                {
-                    int currentXp = PlayerPrefs.GetInt("PlayerCurrentXP");
-                    PlayerPrefs.SetInt("PlayerCurrentXP", currentXp + 150);
-                    print("PlayerCurrentXP: " + PlayerPrefs.GetInt("PlayerCurrentXP"));
-                    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-                }
-
-                if (Input.GetKeyDown(KeyCode.KeypadMinus))
-                {
-                    int currentXp = PlayerPrefs.GetInt("PlayerCurrentXP");
-                    PlayerPrefs.SetInt("PlayerCurrentXP", currentXp - 150);
-                    print("PlayerCurrentXP: " + PlayerPrefs.GetInt("PlayerCurrentXP"));
-                    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-                }
-
-                if (Input.GetKeyDown(KeyCode.R))
-                {
-                    PlayerPrefs.SetInt("PlayerCurrentXP", 0);
-                    print("PlayerCurrentXP: " + PlayerPrefs.GetInt("PlayerCurrentXP"));
-                    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-                }
-            }
+            // TODO Used for easy debug & test on editor
+            // if (Application.isEditor)
+            // {
+            //     if (Input.GetKeyDown(KeyCode.KeypadPlus))
+            //     {
+            //         int currentXp = PlayerPrefs.GetInt("PlayerCurrentXP");
+            //         PlayerPrefs.SetInt("PlayerCurrentXP", currentXp + 150);
+            //         print("PlayerCurrentXP: " + PlayerPrefs.GetInt("PlayerCurrentXP"));
+            //         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            //     }
+            //
+            //     if (Input.GetKeyDown(KeyCode.KeypadMinus))
+            //     {
+            //         int currentXp = PlayerPrefs.GetInt("PlayerCurrentXP");
+            //         PlayerPrefs.SetInt("PlayerCurrentXP", currentXp - 150);
+            //         print("PlayerCurrentXP: " + PlayerPrefs.GetInt("PlayerCurrentXP"));
+            //         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            //     }
+            //
+            //     if (Input.GetKeyDown(KeyCode.R))
+            //     {
+            //         PlayerPrefs.SetInt("PlayerCurrentXP", 0);
+            //         print("PlayerCurrentXP: " + PlayerPrefs.GetInt("PlayerCurrentXP"));
+            //         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            //     }
+            // }
         }
 
         /// <summary>

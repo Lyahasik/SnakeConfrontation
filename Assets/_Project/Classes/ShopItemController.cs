@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -23,9 +24,9 @@ namespace SnakeWarzIO
 
         [Header("UI Objects")]
         public Text itemNameUI;
-        public Text itemPriceUI;
+        public TMP_Text itemPriceUI;
         public Button itemButtonUI;
-        public Text itemButtonTextUI;
+        public TMP_Text itemButtonTextUI;
         public GameObject buyBlock;
         public GameObject buyBlockCoinIcon;
 
@@ -86,14 +87,14 @@ namespace SnakeWarzIO
             {
                 itemButtonUI.image.sprite = buttonSprites[1];
                 itemButtonTextUI.text = "НАДЕТЬ";
-                itemPriceUI.text = "<color=cyan>КУПЛЕНО</color>";
+                itemPriceUI.text = "<color=#00FFFF>КУПЛЕНО</color>";
                 buyBlockCoinIcon.SetActive(false);
             }
             else if (isPurchased && isSelected)
             {
                 itemButtonUI.image.sprite = buttonSprites[2];
                 itemButtonTextUI.text = "НАДЕТО";
-                itemPriceUI.text = "<color=cyan>КУПЛЕНО</color>";
+                itemPriceUI.text = "<color=#00FFFF>КУПЛЕНО</color>";
                 buyBlockCoinIcon.SetActive(false);
             }
         }
